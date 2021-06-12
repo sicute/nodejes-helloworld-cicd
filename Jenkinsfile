@@ -1,6 +1,6 @@
 pipeline{
   environment {
-    registry = "sampath5/node-helloworld"
+    registry = "sonjaya/nodejs-helloworld"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
