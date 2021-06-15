@@ -1,4 +1,5 @@
 pipeline{
+   tools { nodejs "nodejs" }
   environment {
     registry = "sonjaya/nodejs-helloworld"
     registryCredential = 'dockerhub'
