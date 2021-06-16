@@ -39,5 +39,5 @@ pipeline{
         #        sh 'kubectl apply -f deployment.yml'
         #    }
         #}
-    }
+    #}
 }
