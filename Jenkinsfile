@@ -13,7 +13,7 @@ pipeline{
                     sh "npm install"
                 }
                script{
-                    sh "npm audit"
+                    sh "npm audit fix"
                 }
             }
         }
