@@ -16,12 +16,4 @@ pipeline{
                     sh "npm install"
                 }
             }
-        }
-        stage('Building image') {
-            steps{
-                script {
-                  dockerImage = docker.build registry + ":latest"
-                }
-             }
-        }
     }
