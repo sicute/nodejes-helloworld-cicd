@@ -10,10 +10,10 @@ pipeline{
         stage('Build'){
             steps{
                 script{
-                    sh "npm install"
+                    sh "npm set audit false"
                 }
                script{
-                    sh "npm audit fix --force"
+                    sh "npm install"
                 }
             }
         }
