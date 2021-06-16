@@ -23,16 +23,5 @@ pipeline{
                   dockerImage = docker.build registry + ":latest"
                 }
              }
-          }
-          stage('Push Image') {
-              steps{
-                  script 
-                    {
-                        docker.withRegistry( '', registryCredential ) {
-                            dockerImage.push()
-                        }
-                   } 
-               }
-            }
+        }
     }
-}
