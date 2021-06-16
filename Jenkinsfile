@@ -12,6 +12,9 @@ pipeline{
                 script{
                     sh "npm install"
                 }
+               script{
+                    sh "npm audit"
+                }
             }
         }
         stage('Building image') {
